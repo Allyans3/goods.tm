@@ -1,0 +1,79 @@
+.desc-block {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 0 calc(100% - 250px);
+}
+
+.desc-block .logo {
+    font-size: 38px;
+    margin: 10px 20px;
+}
+
+.desc-mid {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.desc-img {
+    min-width: 0;
+    margin: 5px;
+}
+
+img {
+    width: 500px;
+    max-width: 100%; 
+    max-height: 500px; 
+}
+
+.block-for-buy {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 800px;
+    max-width: 100%; 
+    max-height: 500px; 
+    background:rgb(247,247,247);
+    padding: 10px;
+}
+
+.seller {
+    display: block;
+    height: 90px;
+    width: 100%;
+    background: white;
+    border-bottom: 3px solid rgb(247,247,247);
+}
+
+.seller-block {
+    display: flex;
+    flex-flow: column nowrap;
+    height: calc(100% - 30px);
+    width: calc(100% - 30px);
+    margin: 15px 15px;
+}
+
+.seller-block p {
+    margin: 0;
+}
+
+.price {
+    display: flex;
+    height: calc(100% - 90px);
+    width: 100%;
+    background: white;
+}
+
+.price-block {
+    display: flex;
+    flex-flow: column nowrap;
+    height: calc(100% - 30px);
+    width: calc(100% - 30px);
+    margin: 15px 15px;
+}
+
+.goods-desc {
+    margin: 10px 20px; 
+}
+
+.goods-desc ul li {
+    margin-bottom: 10px;
+}

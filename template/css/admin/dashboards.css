@@ -1,0 +1,44 @@
+p {
+    margin: 0;
+}
+
+.dashboards-col {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+.dashboards-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.board {
+    position: relative;
+    background: white;
+    flex: 1 0 299px;
+    max-width: 350px;
+    height: 170px;
+    margin: 8px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.board-title {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    font-weight: bold;
+    color: #868686;
+}
+
+.board-stat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 40px;
+    font-weight: bold;
+}

@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f2f7f8;
+    overflow: hidden;
+}
+
+.header-main {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    margin-left: 305px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 77px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    margin: 0 15px;
+}
+
+.right-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-header p {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.right-header i{
+    font-size: 15px;
+    color: lime;
+}
+
+.burger-btn {
+    display: none;
+    margin: 0 20px 0 10px;
+    cursor: pointer;
+}
+
+.burger-btn span {
+    display: block;
+    margin: 6px;
+    width: 35px;
+    height: 3px;
+    background: #40c3de;
+}
+
+.logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout p{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.logout i{
+    font-size: 22px;
+    margin: 0 15px;
+    color: #40c3de;
+    cursor: pointer;
+    transform: scale(1.5,1.5);
+}
+
+
+/*......................................................................*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 1023px) {
+    .header-main {
+        margin-left: 0;
+    }
+    .burger-btn {
+        display: block;
+    }
+    .header {
+        margin: 0;
+    }
+}

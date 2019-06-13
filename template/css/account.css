@@ -1,0 +1,41 @@
+.categories {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.category {
+    border: 2px solid green;
+    border-radius: 40px;
+    margin: 10px 5px 0;
+    cursor: pointer;
+}
+
+.category:hover {
+    background: green;
+    transition: 0.3s;
+}
+
+.category:hover p{
+    color: white;
+    transition: 0.2s;
+}
+
+.category a {
+    color: black;
+    text-decoration: none;
+}
+
+.category p{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 8px;
+}
+
+/*Card form*/
+.card-wrapper {
+    margin-top: 10px;
+}

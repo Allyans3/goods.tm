@@ -1,0 +1,56 @@
+.title {
+    font-family: sans-serif;
+    display: block;
+    font-size: 31px;
+    line-height: 45px;
+    padding: 18px 0;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.table-responsive {
+    display: table;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.table thead tr {
+    background-color: #269926;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f2f7f8;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #269926;
+}
+
+.checkout-button {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: green;
+}
