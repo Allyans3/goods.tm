@@ -33,7 +33,7 @@
                         <td><?php echo $category['sort_order']; ?></td>
                         <td>
                             <?php if($category['status'] == 1) echo "Displayed";
-                                    else echo "Not displayed"?>
+                                    else echo "Hidden"?>
                         </td>
                         <td><a href="/admin/category/update/<?php echo $category['id']; ?>">Update</a></td>
                         <td><a href="/admin/category/delete/<?php echo $category['id']; ?>">Delete</a></td>

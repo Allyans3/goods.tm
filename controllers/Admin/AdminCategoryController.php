@@ -18,12 +18,12 @@ class AdminCategoryController extends AdminBase
         self::checkAdmin();
 
         if (isset($_POST['submit'])) {
-            Product::deleteProductById($id);
+            Category::deleteCategoryById($id);
 
-            header("Location: /admin/product");
+            header("Location: /admin/category");
         }
 
-        require_once(ROOT . '/views/admin_product/delete.php');
+        require_once(ROOT . '/views/admin_category/delete.php');
         return true;
     }
 
@@ -31,70 +31,39 @@ class AdminCategoryController extends AdminBase
     {
         self::checkAdmin();
 
-        $categoriesList = Category::getCategoryList();
-
         if (isset($_POST['submit'])) {
             $options['name'] = $_POST['name'];
-            $options['code'] = $_POST['code'];
-            $options['price'] = $_POST['price'];
-            $options['category_id'] = $_POST['category_id'];
-            $options['brand'] = $_POST['brand'];
-            $options['availability'] = $_POST['availability'];
-            $options['description'] = $_POST['description'];
-            $options['is_new'] = $_POST['is_new'];
-            $options['is_recommended'] = $_POST['is_recommended'];
+            $options['sort_order'] = $_POST['sort_order'];
             $options['status'] = $_POST['status'];
 
             $errors = false;
 
-            if (!isset($options['name']) || empty($options['name']))
-                $errors[] = "Заполните поля!";
-
             if ($errors == false) {
-                $id = Product::createProduct($options);
+                Category::createCategory($options);
 
-                if ($id) {
-                    if (is_uploaded_file($_FILES['image']['tmp_name']))
-                        move_uploaded_file($_FILES['image']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] . "/upload/images/products/{$id}.jpg");
-                }
-
-                header("Location: /admin/product");
+                header("Location: /admin/category");
             }
         }
 
-        require_once(ROOT . '/views/admin_product/create.php');
+        require_once(ROOT . '/views/admin_category/create.php');
         return true;
     }
 
-    public function actionUpdate($id)
-    {
+    public function actionUpdate($id) {
         self::checkAdmin();
 
-        $categoriesList = Category::getCategoryList();
-
-        $product = Product::getProductById($id);
+        $category = Category::getCategoryById($id);
 
         if (isset($_POST['submit'])) {
             $options['name'] = $_POST['name'];
-            $options['code'] = $_POST['code'];
-            $options['price'] = $_POST['price'];
-            $options['category_id'] = $_POST['category_id'];
-            $options['brand'] = $_POST['brand'];
-            $options['availability'] = $_POST['availability'];
-            $options['description'] = $_POST['description'];
-            $options['is_new'] = $_POST['is_new'];
-            $options['is_recommended'] = $_POST['is_recommended'];
+            $options['sort_order'] = $_POST['sort_order'];
             $options['status'] = $_POST['status'];
 
-            if (Product::updateProductById($id, $options)) {
-                if (is_uploaded_file($_FILES['image']['tmp_name']))
-                    move_uploaded_file($_FILES['image']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] . "/upload/images/products/{$id}.jpg");
-            }
-            header("Location: /admin/product");
-
+            Category::updateCategoryById($id, $options);
+            header("Location: /admin/category");
         }
 
-        require_once(ROOT . '/views/admin_product/update.php');
+        require_once(ROOT . '/views/admin_category/update.php');
         return true;
     }
 }

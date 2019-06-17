@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <?php include ROOT . '/views/layouts/admin/head_admin.php'; ?>
-    <link rel="stylesheet" type="text/css" href="/template/css/table.css">
     <title>Administrator Panel</title>
 </head>
 

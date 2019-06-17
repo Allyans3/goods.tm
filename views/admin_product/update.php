@@ -15,7 +15,7 @@
         <div class="checkout-area" style="flex-direction: column;">
             <form action="#" method="post" enctype="multipart/form-data">
                 <div class="checkout-title">
-                    <h2>Create product</h2>
+                    <h2>Update product</h2>
                 </div>
                 <div class="form-row">
                     <div class="form-row1">
