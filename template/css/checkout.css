@@ -65,6 +65,15 @@ p {
     margin-right: 30px;
 }
 
+.form-row2_3 {
+    flex: 1 0 425px;
+    max-width: 425px;
+}
+
+textarea {
+    resize: none;
+}
+
 .form-input {
     width: 100%;
     outline: none;
@@ -196,8 +205,10 @@ p {
 }
 
 .item-image {
+    display: flex;
     max-width: 190px;
     max-height: 190px;
+    align-items: center;
 }
 
 .order-item-image {

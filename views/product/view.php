@@ -17,7 +17,7 @@
                 <p class="logo"><?php echo $product['name'] ?></p>
                 <div class="desc-mid">
                     <div class="desc-img">
-                        <img src="/template/images/<?php echo $product['image'] ?>">
+                        <img src="<?php echo Product::getImage($product['id']); ?>">
                     </div>
                     <div class="block-for-buy">
                         <div class="seller">

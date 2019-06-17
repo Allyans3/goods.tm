@@ -1,16 +1,15 @@
 <?php
 
 
-class AdminProductController extends AdminBase
+class AdminCategoryController extends AdminBase
 {
     public function actionIndex()
     {
         self::checkAdmin();
 
-        $productsList = Product::getProductsList();
+        $categoriesList = Category::getCategoryList();
 
-        require_once(ROOT . '/views/admin_product/index.php');
-
+        require_once(ROOT . '/views/admin_category/index.php');
         return true;
     }
 

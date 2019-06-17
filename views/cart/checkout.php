@@ -134,7 +134,7 @@
                         <?php foreach ($products as $product): ?>
                         <div class="order-item">
                             <a class="item-image" href="/product/<?php echo $product['id']; ?>">
-                                <img class="order-item-image" src="/template/images/food_cart.png">
+                                <img class="order-item-image" src="<?php echo Product::getImage($product['id']); ?>">
                             </a>
                             <div class="order-item-content">
                                 <p class="title">

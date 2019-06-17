@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <?php include ROOT . '/views/layouts/admin/head_admin.php'; ?>
-    <link rel="stylesheet" type="text/css" href="/template/css/admin/dashboards.css">
     <link rel="stylesheet" type="text/css" href="/template/css/table.css">
     <title>Administrator Panel</title>
 </head>
@@ -13,6 +12,7 @@
 <div class="header-main">
     <?php include ROOT . '/views/layouts/admin/header_admin.php'; ?>
     <div class="content">
+        <a class="add-prod" href="/admin/product/create"><i class="fas fa-plus"></i> Add product</a>
         <div class="table-responsive">
             <table class="table">
                 <thead>
@@ -32,7 +32,7 @@
                         <td><?php echo $product['code']; ?></td>
                         <td><?php echo $product['name']; ?></td>
                         <td><?php echo $product['price']; ?></td>
-                        <td><a href="/admin/product/update/<?php echo $product['id']; ?>">Edit</a></td>
+                        <td><a href="/admin/product/update/<?php echo $product['id']; ?>">Update</a></td>
                         <td><a href="/admin/product/delete/<?php echo $product['id']; ?>">Delete</a></td>
                     </tr>
                 <?php endforeach; ?>

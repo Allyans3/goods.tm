@@ -14,9 +14,9 @@
                     <a class="sidebar-link js-nav-link"href="#">Management</a>
                     <ul class="sidebar-nav-sublist js-subnav">
                         <li class="sidebar-nav-sublist-item"><a class="sidebar-sublist-link" href="/admin/product">Products</a></li>
+                        <li class="sidebar-nav-sublist-item"><a class="sidebar-sublist-link" href="/admin/category">Categories</a></li>
                         <li class="sidebar-nav-sublist-item"><a class="sidebar-sublist-link" href="#">Orders</a></li>
                         <li class="sidebar-nav-sublist-item"><a class="sidebar-sublist-link" href="#">Users</a></li>
-                        <li class="sidebar-nav-sublist-item"><a class="sidebar-sublist-link" href="#">Categories</a></li>
                     </ul>
                 </li>
                 <li class="sidebar-nav-list-item">

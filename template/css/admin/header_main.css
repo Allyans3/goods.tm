@@ -84,6 +84,26 @@ body {
     overflow-y: scroll;
 }
 
+.add-prod {
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 13px 11px;
+    margin-bottom: 15px;
+    width: min-content;
+    white-space: nowrap;
+    background-color: #58d2eb;
+    border: 1px solid #58d2eb;
+    border-radius: 4px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.add-prod:hover {
+    background-color: #fff;
+    color: #58d2eb;
+}
+
 @media screen and (max-width: 1023px) {
     .header-main {
         margin-left: 0;

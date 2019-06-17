@@ -18,8 +18,8 @@
                     <?php foreach ($categoryProducts as $product): ?>
                         <div class="goods-item">
                             <i class="far fa-heart like"></i>
-                            <div class="goods-image">
-                                <img src="/template/images/<?php echo $product['image']; ?>">
+                            <div class="goods-image-block">
+                                <img class="goods-image" src="<?php echo Product::getImage($product['id']); ?>">
                             </div>
                             <div class="goods-info">
                                 <a class="name" href="/product/<?php echo $product['id']; ?>">
