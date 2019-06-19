@@ -32,8 +32,8 @@
                         <td><?php echo $product['code']; ?></td>
                         <td><?php echo $product['name']; ?></td>
                         <td><?php echo $product['price']; ?></td>
-                        <td><a href="/admin/product/update/<?php echo $product['id']; ?>">Update</a></td>
-                        <td><a href="/admin/product/delete/<?php echo $product['id']; ?>">Delete</a></td>
+                        <td><a href="/admin/product/update/<?php echo $product['id']; ?>"><i class="fas fa-edit"></i></a></td>
+                        <td><a href="/admin/product/delete/<?php echo $product['id']; ?>"><i class="fas fa-trash"></i></a></td>
                     </tr>
                 <?php endforeach; ?>
                 </tbody>

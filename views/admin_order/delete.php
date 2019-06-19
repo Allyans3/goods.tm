@@ -11,7 +11,7 @@
 <div class="header-main">
     <?php include ROOT . '/views/layouts/admin/header_admin.php'; ?>
     <div class="content">
-        <p>Are you really want to delete category №<?php echo $id ?>?</p>
+        <p>Are you really want to delete order №<?php echo $id ?>?</p>
 
         <form method="post">
             <input class="add-prod" type="submit" name="submit" value="Delete">

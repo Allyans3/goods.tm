@@ -14,7 +14,7 @@
         <p>Are you really want to delete product №<?php echo $id ?>?</p>
 
         <form method="post">
-            <input type="submit" name="submit" value="Delete">
+            <input class="add-prod" type="submit" name="submit" value="Delete">
         </form>
     </div>
 </div>

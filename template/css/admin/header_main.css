@@ -97,6 +97,7 @@ body {
     border-radius: 4px;
     color: #fff;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .add-prod:hover {

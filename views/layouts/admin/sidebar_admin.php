@@ -15,7 +15,7 @@
                     <ul class="sidebar-nav-sublist js-subnav">
                         <li class="sidebar-nav-sublist-item"><a class="sidebar-sublist-link" href="/admin/product">Products</a></li>
                         <li class="sidebar-nav-sublist-item"><a class="sidebar-sublist-link" href="/admin/category">Categories</a></li>
-                        <li class="sidebar-nav-sublist-item"><a class="sidebar-sublist-link" href="#">Orders</a></li>
+                        <li class="sidebar-nav-sublist-item"><a class="sidebar-sublist-link" href="/admin/order">Orders</a></li>
                         <li class="sidebar-nav-sublist-item"><a class="sidebar-sublist-link" href="#">Users</a></li>
                     </ul>
                 </li>
@@ -30,6 +30,7 @@
                 </li>
                 <li class="sidebar-nav-list-item"><a class="sidebar-link js-nav-link"href="#">Help</a></li>
                 <li class="sidebar-nav-list-item"><a class="sidebar-link js-nav-link"href="#">Settings</a></li>
+                <li class="sidebar-nav-list-item"><a class="sidebar-link js-nav-link"href="/">Back to site</a></li>
             </ul>
         </nav>
 

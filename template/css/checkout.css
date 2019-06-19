@@ -214,7 +214,7 @@ textarea {
 .order-item-image {
     width: auto;
     height: auto;
-    min-width: 190px;
+    max-width: 190px;
     background: center center no-repeat;
     background-size: contain;
 }

@@ -35,8 +35,8 @@
                             <?php if($category['status'] == 1) echo "Displayed";
                                     else echo "Hidden"?>
                         </td>
-                        <td><a href="/admin/category/update/<?php echo $category['id']; ?>">Update</a></td>
-                        <td><a href="/admin/category/delete/<?php echo $category['id']; ?>">Delete</a></td>
+                        <td><a href="/admin/category/update/<?php echo $category['id']; ?>"><i class="fas fa-edit"></i></a></td>
+                        <td><a href="/admin/category/delete/<?php echo $category['id']; ?>"><i class="fas fa-trash"></i></a></td>
                     </tr>
                 <?php endforeach; ?>
                 </tbody>

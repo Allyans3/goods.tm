@@ -10,6 +10,7 @@
                     <p><a href="/login">Login</a></p>
                     <p><a href="/register">Register</a></p>
                 <?php else: ?>
+                    <p><a href="/admin">Admin panel</a></p>
                     <p><a href="/account">Account</a></p>
                     <p><a href="/logout">Logout</a></p>
                 <?php endif; ?>

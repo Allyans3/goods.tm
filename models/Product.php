@@ -80,7 +80,6 @@ class Product {
     }
 
     public static function getProductsByIds($idsArray) {
-        $products = array();
 
         $db = Db::getConnection();
 
@@ -92,6 +91,7 @@ class Product {
         $result->setFetchMode(PDO::FETCH_ASSOC);
 
         $i = 0;
+        $products = array();
         while($row = $result->fetch()) {
             $products[$i]['id'] = $row['id'];
             $products[$i]['code'] = $row['code'];

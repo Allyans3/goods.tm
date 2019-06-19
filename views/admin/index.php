@@ -18,9 +18,13 @@
                         <p class="board-title">Number of products sold</p>
                         <span class="board-stat">10648</span>
                     </div>
+<!--                    <div class="board">-->
+<!--                        <p class="board-title">Unique users this month</p>-->
+<!--                        <span class="board-stat">30627</span>-->
+<!--                    </div>-->
                     <div class="board">
-                        <p class="board-title">Unique users this month</p>
-                        <span class="board-stat">30627</span>
+                        <p class="board-title">Count of orders</p>
+                        <span class="board-stat"><?php echo $countOfOrders; ?></span>
                     </div>
                     <div class="board">
                         <p class="board-title">Online</p>

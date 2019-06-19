@@ -11,6 +11,6 @@
 
     <div class="logout">
         <p>a.sylenok@gmail.com</p>
-        <a href="/"><i class="fas fa-sign-out-alt"></i></a>
+        <a href="/logout"><i class="fas fa-sign-out-alt"></i></a>
     </div>
 </header>

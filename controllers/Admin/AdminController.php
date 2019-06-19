@@ -7,6 +7,7 @@ class AdminController extends AdminBase {
         self::checkAdmin();
 
         $countOfProducts = Product::getCountOfProducts();
+        $countOfOrders = Order::getCountOfOrders();
 
         require_once(ROOT . '/views/admin/index.php');
 
