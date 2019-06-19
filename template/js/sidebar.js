@@ -6,7 +6,8 @@ $(document).ready(function() {
         $(".sidebar").addClass("active");
     });
 
-    $(".content").niceScroll({cursorcolor: "#40c3de"});
+    // $(".content").niceScroll({cursorcolor: "#40c3de"});
+    // $(".sidebar").niceScroll({cursorcolor: "#40c3de"});
 
     jsNav();
 

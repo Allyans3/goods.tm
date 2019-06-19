@@ -94,7 +94,6 @@ class CartController {
         $result = false;
 
         if(isset($_POST['purchase'])) {
-
             $first_name = $_POST['first_name'];
             $last_name = $_POST['last_name'];
             $phone_number = $_POST['phone_number'];
@@ -126,7 +125,7 @@ class CartController {
 
                 if($result) {
                     $adminEmail = 'graphauth@gmail.com';
-                    $message = "http://goods.tm/admin/orders";
+                    $message = "http://goods.tm/admin/order";
                     $subject = "New order.";
                     mail($adminEmail, $subject, $message);
                     Cart::clear();

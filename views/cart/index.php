@@ -13,7 +13,7 @@
 
     <div class="main layout">
 
-        <?php include ROOT . '/views/layouts/sidebar.php'; ?>
+        <?php include ROOT . '/views/layouts/leftbar.php'; ?>
         <div class="table-responsive">
             <?php if($productsInCart == false): ?>
                 <span class="title">Cart is empty</span>

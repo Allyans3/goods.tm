@@ -3,13 +3,13 @@
     margin-top: 55px;
 }
 
-.sidebar {
+.leftbar {
     display: none;
     width: 235px;
     flex-shrink: 0;
 }
 
-.inside-sidebar {
+.inside-leftbar {
     display: flex;
     flex-flow: column nowrap;
     padding: 24px 0;
@@ -17,7 +17,7 @@
     border-right: 1px solid #eaeaea;
 }
 
-.inside-sidebar a {
+.inside-leftbar a {
     font-size: 20px;
     text-decoration: none;
     color: black;
@@ -135,7 +135,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .sidebar {
+    .leftbar {
         display: block;
     }
 }

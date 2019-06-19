@@ -11,7 +11,7 @@ class Order
 
         $products = json_encode($products);
 
-        $sql = 'INSERT INTO product_order (id, ui_id, first_name, last_name, phone_number, email, del_city, address, pay_method, data, products) VALUES (NULL, :userId, :first_name, :last_name, :phone_number, :email, :del_city, :address, :pay_method, CURRENT_TIMESTAMP, :products)';
+        $sql = 'INSERT INTO product_order (id, ui_id, first_name, last_name, phone_number, email, del_city, address, pay_method, date, products) VALUES (NULL, :userId, :first_name, :last_name, :phone_number, :email, :del_city, :address, :pay_method, CURRENT_TIMESTAMP, :products)';
 
         $result = $db->prepare($sql);
         $result->bindParam(':userId', $userId, PDO::PARAM_INT);

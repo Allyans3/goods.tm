@@ -12,7 +12,7 @@
 
         <div class="main layout">
 
-            <?php include ROOT . '/views/layouts/sidebar.php'; ?>
+            <?php include ROOT . '/views/layouts/leftbar.php'; ?>
             <div class="desc-block">
                 <p class="logo"><?php echo $product['name'] ?></p>
                 <div class="desc-mid">

@@ -15,7 +15,7 @@
     <div class="content">
         <div class="checkout-area" style="flex-direction: column;">
             <div class="checkout-title">
-                <h2>View order №</h2>
+                <h2>View order №<?php echo $order['id']; ?></h2>
             </div>
             <div class="form-row">
                 <div class="form-row1">
@@ -74,6 +74,16 @@
                 <div class="form-row2">
                     <div class="form-field">
                         <p><?php echo $order['date']; ?></p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-row1">
+                    <p>Pay method</p>
+                </div>
+                <div class="form-row2">
+                    <div class="form-field">
+                        <p><?php echo $order['pay_method']; ?></p>
                     </div>
                 </div>
             </div>

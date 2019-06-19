@@ -8,11 +8,13 @@
 <body>
     <div class="wrapper">
 
+        <?php include ROOT . '/views/layouts/sidebar.php'; ?>
+
         <?php include ROOT . '/views/layouts/header.php'; ?>
 
         <div class="main layout">
 
-            <?php include ROOT . '/views/layouts/sidebar.php'; ?>
+            <?php include ROOT . '/views/layouts/leftbar.php'; ?>
 
             <div class="goods">
                 <div class="gooods">

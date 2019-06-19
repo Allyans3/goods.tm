@@ -18,10 +18,10 @@
         </div>
         <div class="down-header">
             <div class="logo1">
-                <a href="http://goods.tm/"><b>Food Delivery</b></a>
+                <a href="/"><b>Food Delivery</b></a>
             </div>
             <div class="logo2">
-                <a href="http://goods.tm/"><b>FD</b></a>
+                <a href="/"><b>FD</b></a>
             </div>
             <input class="search-line" type="text" name="search" value="" placeholder="Find product or restaurant">
             <button class="search-button" type="submit" name="Search"><i class="fas fa-search"></i></button>
