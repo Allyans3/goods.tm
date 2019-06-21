@@ -1,8 +1,8 @@
 .sidebar {
-    position: absolute;
+    position: fixed;
     width: 305px;
     top: 0;
-    left: 0;
+    left: -305px;
     bottom: 0;
     background: #fff;
     padding-top: 110px;
@@ -16,7 +16,12 @@
     left: 0;
 }
 
+.menu-overlay.active {
+    display: block;
+}
+
 .menu-overlay {
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -27,7 +32,7 @@
 }
 
 .cross-close {
-    margin: 0 20px;
+    margin: 0 25px 0 20px;
     fill: white;
     display: block;
     cursor: pointer;
@@ -47,14 +52,14 @@
 
 .sidebar-top-up {
     display: flex;
-    height: 70px;
+    height: 55px;
     justify-content: flex-start;
     align-items: center;
 }
 
 .sidebar-top-down {
     display: flex;
-    height: 40px;
+    height: 55px;
     justify-content: flex-start;
     align-items: flex-end;
     margin-left: 20px;
@@ -116,7 +121,14 @@
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px 10px 15px 35px;
+}
+
+.border-top {
     border-top: 1px solid rgba(222, 222, 222, 0.5);
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(222, 222, 222, 0.5);
 }
 
 .sidebar-link.current,
@@ -151,6 +163,7 @@
     padding-left: 0;
     position: relative;
     text-decoration: none;
+    margin: 0;
 }
 
 .sidebar-sublist-link:hover {

@@ -6,6 +6,9 @@ class AccountController
     public function actionIndex() {
         User::checkLogged();
 
+        $categories = array();
+        $categories = Category::getCategoryList();
+
         require_once (ROOT . '/views/account/index.php');
 
         return true;
@@ -14,6 +17,9 @@ class AccountController
     public function actionPersonaldata() {
 
         $userId = User::checkLogged();
+
+        $categories = array();
+        $categories = Category::getCategoryList();
 
         $user = User::getUserById($userId);
 
@@ -44,6 +50,10 @@ class AccountController
 
     public function actionBankdetails() {
         User::checkLogged();
+
+        $categories = array();
+        $categories = Category::getCategoryList();
+
         $result = false;
 
         if(isset($_POST['submit'])){

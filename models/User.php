@@ -141,4 +141,19 @@ class User
 
         $result->execute();
     }
+
+    public static function getUserId(){
+        if(isset($_SESSION['user']))
+            return $_SESSION['user'];
+        return false;
+    }
+
+    public static function checkAdminStatus() {
+        $userId = self::getUserId();
+
+        $user = User::getUserById($userId);
+
+        if($user['role'] == 'admin')
+            return true;
+    }
 }

@@ -14,7 +14,7 @@
 
             <?php include ROOT . '/views/layouts/leftbar.php'; ?>
             <div class="desc-block">
-                <p class="logo"><?php echo $product['name'] ?></p>
+                <p class="logo"><?php echo $product['name'] ?> Code: <?php echo $product['code']; ?></p>
                 <div class="desc-mid">
                     <div class="desc-img">
                         <img src="<?php echo Product::getImage($product['id']); ?>">
@@ -22,7 +22,7 @@
                     <div class="block-for-buy">
                         <div class="seller">
                             <div class="seller-block">
-                                <p>Seller: Armadillo</p>
+                                <p>Seller: <?php echo $product['brand']; ?></p>
                                 <p>Number: +126388488273</p>
                             </div>
                         </div>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="goods-desc">
                     <strong>Description</strong>
-                    <?php echo $product['description'] ?>
+                    <?php echo $product['description']; ?>
                 </div>
             </div>
         </div>

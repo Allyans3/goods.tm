@@ -1,6 +1,7 @@
 <?php
 
     return array(
+
         'product/([0-9]+)' => 'product/view/$1',
 
         'catalog/category/([0-9]+)/page-([0-9]+)' => 'catalog/category/$1/$2', //actionCategory в CatalogController
@@ -40,6 +41,10 @@
         'admin' => 'admin/index',
 
         'contacts' => 'site/contact',
+
+        '(\?i=1)' => 'error/index',
+        '(^.+$)' => 'error/404Page',
+
         '' => 'site/index', // actionIndex в SiteController
     );
 

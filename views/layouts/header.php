@@ -1,8 +1,10 @@
+<?php include ROOT . '/views/layouts/sidebar.php'; ?>
+
 <header class="header">
     <div class="layout">
         <div class="up-header">
             <div class="contacts">
-                <p><a href="">Number: +380672537615</a></p>
+                <p><a href="#">Home: +38 (044) 19-32-442</a></p>
                 <p><a href="/contacts">Contacts</a></p>
             </div>
             <div class="account">
@@ -10,13 +12,20 @@
                     <p><a href="/login">Login</a></p>
                     <p><a href="/register">Register</a></p>
                 <?php else: ?>
-                    <p><a href="/admin">Admin panel</a></p>
+                    <?php if (User::checkAdminStatus()): ?>
+                        <p><a href="/admin">Admin panel</a></p>
+                    <?php endif; ?>
                     <p><a href="/account">Account</a></p>
                     <p><a href="/logout">Logout</a></p>
                 <?php endif; ?>
             </div>
         </div>
         <div class="down-header">
+            <a class="burger-sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
             <div class="logo1">
                 <a href="/"><b>Food Delivery</b></a>
             </div>

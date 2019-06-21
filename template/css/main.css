@@ -25,17 +25,18 @@
 }
 
 .goods {
+    position: relative;
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
     width: 100%;
+    margin: 4px;
 }
 
 .gooods {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    margin: 4px;
 }
 
 .goods-item {
@@ -142,24 +143,24 @@
 
 @media screen and (min-width: 550px) {
     .goods-item {
-        max-width: calc(50% - 8px);
+        max-width: calc(50% - 4px);
     }
 }
 
 @media screen and (min-width: 1050px) {
     .goods-item {
-        max-width: calc(33.333% - 8px);
+        max-width: calc(33.333% - 4px);
     }
 }
 
 @media screen and (min-width: 1305px) {
     .goods-item {
-        max-width: calc(25% - 8px);
+        max-width: calc(25% - 4px);
     }
 }
 
 @media screen and (min-width: 1590px) {
     .goods-item {
-        max-width: calc(20% - 8px);
+        max-width: calc(20% - 4px);
     }
 }

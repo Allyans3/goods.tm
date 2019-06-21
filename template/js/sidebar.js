@@ -1,10 +1,30 @@
 $(document).ready(function() {
+
+    //Administrator panel sidebar
     $(".fa-times").on("click", function() {
         $(".sidebar").removeClass("active");
     });
     $(".burger-btn").on("click", function() {
         $(".sidebar").addClass("active");
     });
+
+    //Main shop sidebar
+    $(".burger-sidebar").on("click", function() {
+        $(".sidebar").addClass("active");
+        $(".menu-overlay").addClass("active");
+        $("body").css("overflow", "hidden");
+    });
+    $(".cross-close").on("click", function() {
+        $(".sidebar").removeClass("active");
+        $(".menu-overlay").removeClass("active");
+        $("body").css("overflow", "visible");
+    });
+    $(".menu-overlay").on("click", function() {
+        $(".sidebar").removeClass("active");
+        $(".menu-overlay").removeClass("active");
+        $("body").css("overflow", "visible");
+    });
+
 
     // $(".content").niceScroll({cursorcolor: "#40c3de"});
     // $(".sidebar").niceScroll({cursorcolor: "#40c3de"});

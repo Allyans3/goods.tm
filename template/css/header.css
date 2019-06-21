@@ -73,6 +73,20 @@ body, html {
     align-items: center;
 }
 
+.burger-sidebar {
+    display: block;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.burger-sidebar span {
+    display: block;
+    margin: 6px;
+    width: 35px;
+    height: 3px;
+    background: white;
+}
+
 .logo1 a{
     display: none;
     font-size: 32px;
@@ -177,6 +191,9 @@ body, html {
     .search-line {
         margin-left: 24px;
     }
+    .burger-sidebar {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -194,5 +211,14 @@ body, html {
     }
     .search-button {
         margin-right: 18px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .logo2 a {
+        display: none;
+    }
+    .burger-sidebar {
+        margin: 0;
     }
 }

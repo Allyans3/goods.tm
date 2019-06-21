@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="/template/css/header.css">
 <link rel="stylesheet" href="/template/css/main.css">
-<!--<link rel="stylesheet" href="/template/css/description.css">-->
+<link rel="stylesheet" href="/template/css/description.css">
 <link rel="stylesheet" href="/template/css/sidebar.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 <script type="text/javascript" src="/template/js/sidebar.js"></script>
