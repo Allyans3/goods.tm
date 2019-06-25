@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="/template/css/main.css">
 <link rel="stylesheet" href="/template/css/description.css">
 <link rel="stylesheet" href="/template/css/sidebar.css">
+<link rel="shortcut icon" href="/template/images/favicon.ico" type="image/x-icon">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 <script type="text/javascript" src="/template/js/sidebar.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">

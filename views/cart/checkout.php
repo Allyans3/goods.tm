@@ -19,7 +19,7 @@
                     <div class="checkout-title">
                         <h2>Contact details</h2>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row form-order">
                         <div class="form-row1">
                             <p>First name*</p>
                         </div>
@@ -30,7 +30,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row form-order">
                         <div class="form-row1">
                             <p>Last name*</p>
                         </div>
@@ -41,7 +41,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row form-order">
                         <div class="form-row1">
                             <p>Phone number*</p>
                         </div>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row form-order">
                         <div class="form-row1">
                             <p>E-mail</p>
                         </div>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <h2 class="form-subtitle">Shipping and payment</h2>
-                    <div class="form-row">
+                    <div class="form-row form-order">
                         <div class="form-row1">
                             <p>Delivery сity*</p>
                         </div>
@@ -75,30 +75,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row form-order">
                         <div class="form-row1">
                             <p>Delivery address*</p>
                         </div>
-                        <div class="form-row2_1">
-                            <div class="form-field">
-                                <input class="form-input" type="text" name="address_street" required placeholder="Enter your street...">
-                                <div class="form-input-decor"></div>
+<!--                        <div class="form-row22">-->
+                        <div class="form-row22">
+                            <div class="form-row2_1">
+                                <div class="form-field">
+                                    <input class="form-input" type="text" name="address_street" required placeholder="Enter your street...">
+                                    <div class="form-input-decor"></div>
+                                </div>
+                            </div>
+                            <div class="form-row2_2">
+                                <div class="form-field">
+                                    <input class="form-input" type="text" name="address_numb" required placeholder="№">
+                                    <div class="form-input-decor"></div>
+                                </div>
+                            </div>
+                            <div class="form-row2_2">
+                                <div class="form-field">
+                                    <input class="form-input" type="text" name="address_apart" required placeholder="ap.">
+                                    <div class="form-input-decor"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-row2_2">
-                            <div class="form-field">
-                                <input class="form-input" type="text" name="address_numb" required placeholder="№">
-                                <div class="form-input-decor"></div>
-                            </div>
-                        </div>
-                        <div class="form-row2_2">
-                            <div class="form-field">
-                                <input class="form-input" type="text" name="address_apart" required placeholder="ap.">
-                                <div class="form-input-decor"></div>
-                            </div>
-                        </div>
+
+<!--                        </div>-->
                     </div>
-                    <div class="form-row" style="align-items: flex-start; margin-top: 20px;">
+                    <div class="form-row form-row-radios" style="align-items: flex-start; margin-top: 20px;">
                         <div class="form-row1">
                             <p>Payment method*</p>
                         </div>

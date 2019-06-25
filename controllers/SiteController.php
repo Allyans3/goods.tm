@@ -1,6 +1,5 @@
 <?php
 
-
 class SiteController
 {
     public function actionIndex() {
@@ -17,11 +16,6 @@ class SiteController
     }
 
     public function actionContact() {
-
-        $userName = '';
-        $userEmail = '';
-        $userSubject = '';
-        $userText = '';
         $result = false;
 
         if(isset($_POST['submit'])) {
@@ -36,10 +30,18 @@ class SiteController
                 $errors[] = 'Incorrect format of email';
 
             if($errors == false) {
-                $adminEmail = 'graphauth@gmail.com';
-                $message = "Text: {$userText}. From {$userName}";
-                $result = mail($adminEmail, $userSubject, $message);
-                echo "<meta http-equiv='refresh' content='0'>";
+                $mail = MailSet::config();
+                try {
+                    $mail->setFrom($userEmail, $userName);
+                    $mail->addAddress('graphauth@gmail.com');
+                    $mail->Subject = $userSubject;
+                    $mail->Body    = $userText;
+
+                    $mail->send();
+                    echo '<meta http-equiv="Refresh" content="0"/>';
+                } catch (Exception $e) {
+                    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                }
             }
 
         }

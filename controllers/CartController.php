@@ -124,10 +124,13 @@ class CartController {
                 $result = Order::save($first_name, $last_name, $phone_number, $e_mail, $del_city, $address_street, $address_numb, $address_apart, $userId, $productsInCart, $pay_method);
 
                 if($result) {
-                    $adminEmail = 'graphauth@gmail.com';
-                    $message = "http://goods.tm/admin/order";
-                    $subject = "New order.";
-                    mail($adminEmail, $subject, $message);
+                    $mail = MailSet::config();
+                    $mail->setFrom($e_mail, $first_name . " " . $last_name);
+                    $mail->addAddress('graphauth@gmail.com');
+                    $mail->Subject = "New order";
+                    $mail->Body    = "http://goods.tm/admin/order";
+
+                    $mail->send();
                     Cart::clear();
 
                     header("Location: /");
